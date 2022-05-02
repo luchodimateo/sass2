@@ -1,0 +1,144 @@
+* {
+  padding: 0%;
+  margin: 0%; }
+
+body {
+  font-family: 'Smooch Sans', sans-serif;
+  background-color: aliceblue; }
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .footer .redes {
+    width: 30px;
+    padding: 20px; }
+
+@media only screen and (min-width: 1024px) {
+  .redes {
+    width: 45px;
+    transition: .3s linear; }
+    .redes:hover {
+      transform: scale(1.3); } }
+
+header div h1 {
+  background-color: aliceblue;
+  text-align: center; }
+
+header nav {
+  width: 100%;
+  background-color: cornflowerblue;
+  height: 30px;
+  padding-top: 10px; }
+
+header ul {
+  display: flex;
+  justify-content: center; }
+  header ul li {
+    font-size: 15px;
+    list-style: none; }
+    header ul li .menu {
+      font-weight: bold;
+      color: black;
+      padding: 4px;
+      border-radius: 3px;
+      text-decoration: none; }
+      header ul li .menu:hover {
+        background-color: #2d5fbb; }
+
+@media only screen and (min-width: 1024px) {
+  header div h1 {
+    font-size: 60px;
+    margin: 10px; }
+  header nav {
+    padding-bottom: 10px; }
+    header nav ul {
+      display: flex;
+      justify-content: space-around; }
+      header nav ul li {
+        font-size: 20px; }
+        header nav ul li .home {
+          font-size: 45px;
+          padding-bottom: 15px; } }
+
+#grilla {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-areas: "home" "vela1" "vela2" "vela3" "vela4" "conocenos" "footer"; }
+  #grilla .home {
+    grid-area: home;
+    text-align: center;
+    background-color: cornflowerblue;
+    margin-top: 15px;
+    margin-bottom: 10px; }
+    #grilla .home .home-imagen {
+      width: 100%; }
+  #grilla .vela1 {
+    margin-top: 10px;
+    grid-area: vela1;
+    background-image: radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)), url(../images/fondogris.jpg);
+    background-size: cover;
+    border: solid aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  #grilla .vela2 {
+    grid-area: vela2;
+    background-image: radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)), url(../images/fondo.jpg);
+    background-size: cover;
+    border: solid aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  #grilla .vela3 {
+    grid-area: vela3;
+    background-image: radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)), url(../images/fondo.jpg);
+    border: solid aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  #grilla .vela4 {
+    grid-area: vela4;
+    background-image: radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)), url(../images/fondogris.jpg);
+    background-size: cover;
+    border: solid aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  #grilla .conocenos {
+    grid-area: conocenos;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  #grilla .imagenes {
+    width: 100px;
+    border-radius: 100%;
+    padding: 15px; }
+  #grilla .parrafo {
+    text-align: center;
+    padding: 20px; }
+
+@media only screen and (min-width: 1024px) {
+  #grilla {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "home home" "vela1 vela2" "vela3 vela4" "conocenos conocenos" "footer footer"; }
+    #grilla .home {
+      font-size: 45px;
+      padding-bottom: 15px; }
+    #grilla .vela1 {
+      margin-top: 0%; }
+    #grilla .imagenes {
+      transition: .3s linear; }
+      #grilla .imagenes:hover {
+        transform: scale(1.2); }
+  .conocenos {
+    background-color: cornflowerblue; }
+  .parrafo {
+    font-size: 40px; }
+  .img, #grilla .imagenes {
+    width: 150px;
+    padding-bottom: 20px; } }

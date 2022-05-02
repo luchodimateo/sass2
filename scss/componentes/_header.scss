@@ -1,0 +1,55 @@
+header{
+    div{
+        h1{
+         background-color: aliceblue;
+            text-align: center;
+        }
+}
+nav{
+        width: 100%;
+        background-color: $color-back;
+        height: 30px;
+        padding-top: 10px;
+    }
+        ul{
+            display: flex;
+            justify-content: center;
+            li{
+                font-size: 15px;
+                list-style: none;
+                .menu{
+                    font-weight: bold;
+                    color: black;
+                    padding: 4px;
+                    border-radius: 3px;
+                    text-decoration: none;
+                    &:hover{
+                        background-color: rgb(45, 95, 187);
+                    }}
+                }}
+
+
+}
+@media only screen and (min-width:1024px) {
+    
+    header{
+        div{
+            h1{
+            font-size: 60px;
+            margin: 10px;
+        }}
+        nav{
+            padding-bottom: 10px;
+            ul{
+            display: flex;
+            justify-content: space-around;
+            li{
+                font-size: 20px;
+                .home{
+                    font-size: 45px;
+                    padding-bottom: 15px;
+                }
+            }
+        }}
+    }
+    }

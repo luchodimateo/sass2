@@ -1,0 +1,14 @@
+$color-back: cornflowerblue;
+$back: radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5));
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+//maps
+$fondos: (
+    fondo1: url(../images/fondo.jpg),
+    fondo2: url(../images/fondogris.jpg),
+);

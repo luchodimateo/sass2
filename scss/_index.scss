@@ -1,0 +1,104 @@
+
+#grilla {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas:"home"
+                        "vela1"
+                        "vela2"
+                        "vela3"
+                        "vela4"
+                        "conocenos"
+                        "footer";
+                        .home {
+                            grid-area: home;
+                            text-align: center;
+                            background-color: $color-back;
+                            margin-top: 15px;
+                            margin-bottom: 10px;
+                            .home-imagen {
+                                width: 100%;}                     
+                        }
+                        .vela1 {
+                            margin-top: 10px;
+                            grid-area: vela1;
+                            background-image: $back, map-get($fondos, fondo2 );
+                            background-size:cover;
+                            border: solid aliceblue;
+                            @include flex-column-center;
+                        }
+                            .vela2 {
+                                grid-area: vela2;
+                                background-image: $back, map-get($fondos, fondo1);
+                                background-size: cover;
+                                border: solid aliceblue;
+                                @include flex-column-center;
+                            }
+                            .vela3 {
+                                grid-area: vela3;
+                                background-image: $back, map-get($fondos, fondo1);
+                                border: solid aliceblue;
+                                @include flex-column-center;
+                            }
+                            .vela4 {
+                                grid-area: vela4;
+                                background-image: $back, map-get($fondos, fondo2 );
+                                background-size: cover;
+                                border: solid aliceblue;
+                                @include flex-column-center;
+                            }
+                            .conocenos {
+                                grid-area: conocenos;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                                .imagenes {
+                                    width: 100px;
+                                    border-radius: 100%;
+                                    padding: 15px;}
+                                .parrafo {
+                                        text-align: center;
+                                        padding: 20px;}
+                        }
+
+                        @media only screen and (min-width:1024px) {
+                            #grilla {
+                                display: grid;
+                                width: 100%;
+                                grid-template-columns: 1fr 1fr;
+                                grid-template-areas:"home home"
+                                                    "vela1 vela2"
+                                                    "vela3 vela4"
+                                                    "conocenos conocenos"
+                                                    "footer footer";
+                            .home{
+                                 font-size: 45px;
+                                padding-bottom: 15px;
+                                                    }                    
+                            .vela1{
+                                margin-top: 0%;
+                            }
+                            
+                            .imagenes{ 
+                                @extend .img;
+                                
+                                transition: .3s linear;
+                                &:hover{
+                                    transform: scale(1.2);
+                                }   
+                            }
+                            
+                            
+                        }
+                        .conocenos{
+                            background-color: $color-back;
+                        }
+                        .parrafo{ font-size: 40px;
+                       }
+                    //extend
+                    .img{
+                        width: 150px;
+                        padding-bottom: 20px;
+                    }
+                    }
