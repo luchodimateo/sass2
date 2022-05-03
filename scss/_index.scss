@@ -2,14 +2,14 @@
 #grilla {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-areas:"home"
-                        "vela1"
-                        "vela2"
-                        "vela3"
-                        "vela4"
-                        "conocenos"
-                        "footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:"home home"
+                        "vela1 vela1"
+                        "vela2 vela2"
+                        "vela3 vela3"
+                        "vela4 vela4"
+                        "conocenos conocenos"
+                        "footer footer";
                         .home {
                             grid-area: home;
                             text-align: center;
@@ -29,7 +29,7 @@
                         }
                             .vela2 {
                                 grid-area: vela2;
-                                background-image: $back, map-get($fondos, fondo1);
+                                background-image: $back, map-get($fondos, fondo2);
                                 background-size: cover;
                                 border: solid aliceblue;
                                 @include flex-column-center;
@@ -42,7 +42,7 @@
                             }
                             .vela4 {
                                 grid-area: vela4;
-                                background-image: $back, map-get($fondos, fondo2 );
+                                background-image: $back, map-get($fondos, fondo1 );
                                 background-size: cover;
                                 border: solid aliceblue;
                                 @include flex-column-center;
@@ -61,8 +61,11 @@
                                         text-align: center;
                                         padding: 20px;}
                         }
-
-                        @media only screen and (min-width:1024px) {
+    
+                   
+@media only screen and (min-width:1024px) {
+   
+           }
                             #grilla {
                                 display: grid;
                                 width: 100%;
@@ -101,4 +104,4 @@
                         width: 150px;
                         padding-bottom: 20px;
                     }
-                    }
+                    
